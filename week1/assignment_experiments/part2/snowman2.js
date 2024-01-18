@@ -44,12 +44,13 @@ function draw() {
     quad(475, 50, 600, 50, 550, 120, 450, 120);
     //eyes
     stroke(0);
-    strokeWeight(35);
+    strokeWeight(15);
     point(465, 200);
     point(525, 200);
     //nose
     stroke(255, 165, 0);
-    ellipse(500, 250, 45, 10)
+    strokeWeight(25);
+    ellipse(500, 240, 50, 10)
     //buttons
     stroke(0);
     strokeWeight(15);
