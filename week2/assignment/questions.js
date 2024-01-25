@@ -11,5 +11,6 @@ const questions = [
     {question:"Which fictional vigilante inspired the costume for the Dread Pirate Roberts?" , answer: "Zorro"},
 ];
 console.log(questions) 
-console.log(games) 
-const response = window.prompt("Can you answer the following Princess Bride trivia question?");
+const randomTrivia = Math.round(Math.random() * questions.length -1);
+const response = window.prompt("Can you answer the following Princess Bride trivia question?"+ "\n" +questions[randomTrivia].question);
+window.alert("You answered: " + response + "\n" + " The correct answer was: " +questions[randomTrivia].answer)
