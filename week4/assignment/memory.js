@@ -5,7 +5,7 @@ let startingX = 50;
 let startingY = 50;
 let boxWidth = 90;
 let boxHeight = 90;
-let box;
+
 
 
 //creating canvas and setting background color
