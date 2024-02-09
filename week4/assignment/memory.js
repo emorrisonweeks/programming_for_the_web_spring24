@@ -7,12 +7,10 @@ let boxWidth = 90;
 let boxHeight = 90;
 
 
-
 //creating canvas and setting background color
 function setup (){
     createCanvas(500, 500);
     background(11, 31, 64);
-    
    
 }
 //drawing the grid
