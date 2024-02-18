@@ -14,6 +14,7 @@ const gameState = {
 //array of images
 letcardFaceArray = [];
 let cardBack;
+//adding the images
 function preload() {
     cardBack = loadImage('images/cardback.png');
     cardFaceArray = [
@@ -25,12 +26,11 @@ function preload() {
         loadImage('images/blue.jpg'),
         loadImage('images/purple.jpg'),
         loadImage('images/pink.jpg'),
-    ]
+    ];
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
-    background('#2b919b');
+    createCanvas(800, 800);
     let selectedFaces = [];
     for (let z = 0; z <8; z++) {
         const randomIdx = floor(random(cardFaceArray.length));
@@ -58,10 +58,12 @@ function setup() {
     }
 }
    function draw () {
+    background('#2b919b');
     if (gameState.numMatched === gameState.totalPairs) {
-    fill("green");
+    fill("#a31e54");
     textSize(66);
-    text("Hooray! You won!", 400, 425);
+    textFont('Gill Sans');
+    text("Hooray! You won!", 160, 780);
     noLoop();
     }
    for(let k = 0; k < cards.length; k++) {
@@ -73,10 +75,11 @@ function setup() {
    noLoop();
    gameState.flippedCards.length = 0;
    gameState.waiting = false;
-   fill(225);
+   fill("#f1d6e1");
    textSize(36);
-   text('your attempts: ' + gameState.attempts, 335, 700);
-   text('your matches: ' + gameState.numMatched, 335, 650);
+   textFont('Gill Sans');
+   text('your attempts: ' + gameState.attempts, 295, 650);
+   text('your matches: ' + gameState.numMatched, 295, 700);
 }
 
 //to show whether card has been clicked
