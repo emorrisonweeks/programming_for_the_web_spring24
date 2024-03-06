@@ -1,0 +1,28 @@
+.films-table {
+  width: 100%;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.films-table thead, .films-table tr {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.films-table td, .films-table th {
+  border-left: 1px solid black;
+  text-align: center;
+}
+
+.films-table img {
+width: 200px;
+} 
+
+.films-table th {
+  font-size: 16px;
+  padding: 15px;
+}
+
+.plant-table td {
+  padding-left: 3px;
+  padding-right: 3px;
+}
