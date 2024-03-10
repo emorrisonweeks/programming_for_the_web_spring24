@@ -96,7 +96,7 @@ function App() {
           key={film.id} 
           deleteFn={deleteCard}
           duplicateFN={duplicateCard}
-          {...films}/>
+          {...film}/>
         )
       })}
      </div>

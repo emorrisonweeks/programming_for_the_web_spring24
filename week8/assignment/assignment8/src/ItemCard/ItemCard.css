@@ -2,7 +2,7 @@
     width:100%;
     max-width: 250%;
     padding:10px;
-    height:375px;
+    height:400px;
     border:1px solid black;
     text-align: center;
     margin:10px;
@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: space-around;
     position: relative;
+    background-color: #ce93a0;
 }
 
 .cardImg img {
@@ -23,7 +24,7 @@
     font-size: 18px;
 }
 
-.hasAnimation, .criterionCollection{
+.usesAnimation, .criterionCollection{
     width: 25px;
     height: 25px;
     top: 12.5px;
