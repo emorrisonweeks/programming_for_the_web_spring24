@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 import './App.css'
-import {Masthead} from "./Masthead/Masthead";
-import {ItemCard} from "./ItemCard/ItemCard";
+import Masthead from "./Masthead/Masthead";
+import ItemCard from "./ItemCard/ItemCard";
 import {nanoid} from "nanoid";
 
 function App() {
@@ -71,13 +71,25 @@ function App() {
       id: "7",
     }
   ]);
-
+  function deleteCard(id){
+    console.log("delete me", id);
+    const updatedArray= films.filter((film) => {
+      return film.id !== id; //skip item with matching ID 
+    })
+    setFilms(updatedArray)
+  }
+  function duplicateCard(id) {
+    console.log("duplicate me", id)
+    const matchingFilm = films.find((film) => {
+      return film.id === id
+    });
+    const updatedFilms = {...matchingFilm, id: nanoid()}
+    setFilms([...films, updatedFilms]);
+  }
   return (
     <div className="page">
      <Masthead />
      <div className="collection">
-      {/*deck map goes here */}
-      {/*use ItemCard component in loop*/}
       {films.map((film) => {
         return (
           <ItemCard 

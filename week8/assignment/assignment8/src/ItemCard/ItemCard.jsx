@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./itemCard.css";
+import "./ItemCard.css";
 import criterion from "../assets/criterion.png";
 import seahorse from "../assets/seahorse.png";
 import trashicon from "../assets/trashicon.svg";
@@ -14,10 +14,11 @@ export default function ItemCard ({
     id,
     deleteFn,
     duplicateFn,
+    poster,
     
 }) {
   return (
-    <div classname="filmCard">
+    <div className="filmCard">
         {criterionCollection && <div className="criterionCollection"> <img src={criterion} title="This film is part of the Criterion Collection." /></div>}
         {usesAnimation && <div className="usesAnimation"> <img src={seahorse} title="This film features animation." /></div>}
         <div className="cardImg">
