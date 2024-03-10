@@ -3,6 +3,7 @@ import "./ItemCard.css";
 import criterion from "../assets/criterion.png";
 import seahorse from "../assets/seahorse.png";
 import trashicon from "../assets/trashicon.svg";
+import copy from "../assets/copy-solid.svg";
 
 export default function ItemCard ({
     filmName, 
@@ -33,7 +34,7 @@ export default function ItemCard ({
           <a href="#" onClick={(evt) => {
             evt.preventDefault();
             duplicateFn(id)
-          }}></a>
+          }}><img src={copy} /></a>
           </div>
         </div>
    

@@ -95,7 +95,7 @@ function App() {
           <ItemCard 
           key={film.id} 
           deleteFn={deleteCard}
-          duplicateFN={duplicateCard}
+          duplicateFn={duplicateCard}
           {...film}/>
         )
       })}
