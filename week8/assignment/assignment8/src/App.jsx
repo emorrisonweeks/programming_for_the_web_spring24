@@ -20,7 +20,7 @@ function App() {
       filmName: "The Life Aquatic", 
       description: "With a plan to exact revenge on a mythical shark that killed his partner, Oceanographer Steve Zissou (Bill Murray) rallies a crew that includes his estranged wife, a journalist, and a man who may or may not be his son.",
       releaseYear: "Released in 2004",
-      image: "../thelifeaquatic.jpg",
+      image: "./thelifeaquatic.jpg",
       usesAnimation: true,
       criterionCollection: true,
       id: "2",
