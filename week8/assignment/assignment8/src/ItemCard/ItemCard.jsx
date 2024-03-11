@@ -36,6 +36,8 @@ export default function ItemCard ({
             duplicateFn(id)
           }}><img src={copy} /></a>
           </div>
+        <div className="cardDetails">{releaseYear}</div>
+        <div className="cardDetails">{description}</div>
         </div>
    
   )
