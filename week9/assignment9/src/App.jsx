@@ -87,6 +87,13 @@ function App() {
     const updatedFilms = {...matchingFilm, id: nanoid()}
     setFilms([...films, updatedFilms]);
   }
+
+  function addCard(newCard){
+    const cardWithID = {
+      ...newCard,
+      id: nanoid()
+    }
+  }
   return (
     <div className="page">
      <Masthead />
@@ -102,8 +109,9 @@ function App() {
       })}
      </div>
      <hr />
-     <NewWesForm />
+     <NewWesForm addCardFn = {addCard} />
     </div>
+    
   )
 }
 
